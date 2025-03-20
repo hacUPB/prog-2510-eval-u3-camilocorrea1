@@ -1,5 +1,8 @@
 # Lista con numeros aleatorios
 
+- Crear una lista vacía
+- Llenar esa lista con 100 números aleatorios utilizando un bucle
+
 ```
 import random
 

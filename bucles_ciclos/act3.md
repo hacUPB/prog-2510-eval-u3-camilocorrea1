@@ -50,7 +50,34 @@ for i in range(0,110,10):
     print(f"{i}\t\t | \t\t{fa}")
 print("-" * 60)   
 ```
-    
+
+# Codigo quiz bucles
+
+```
+stock = 50
+print(f"Bienvenido al sistema de inventario.Stock disponible: {stock}")
+
+while stock != 0:
+    compra = int(input("Cuantos productos quieres comprar: "))
+    if compra == 0:
+        print("Saliendo del inventario")
+        break
+    elif compra <=50:
+        stock -= compra
+        
+        if stock == 0:
+            print(f"Compra realizada. Stock restante: {stock}")  #Esta linea de codigo la coloque dentro del if.
+            print("Inventario agotado")
+            break
+        elif stock < 0:                      # elif añadido para prevenir numeros menores de 0 en la variable stock
+            stock += compra
+            print("No hay suficientes productos disponibles")
+
+        else:                               # else añadido  
+            print(f"Compra realizada. Stock restante: {stock}")
+    else:
+        print("Ingrese un valor del stock")
+```
 
 
 

@@ -4,113 +4,113 @@ Este código permite al usuario reservar un boleto de avión con base en la ciud
 
 # Variables de entrada
 
-- **nombre** = El usuario ingresa nombre y apellido.
+- **nombre**: El usuario ingresa nombre y apellido.
 
-- **titulo** = El usuario indica si es "Sr." o "Sra.".
+- **titulo**: El usuario indica si es "Sr." o "Sra.".
 
-- **origen** = El usuario ingresa la ciudad de origen del vuelo (Medellín, Bogotá, Cartagena).
+- **origen**: El usuario ingresa la ciudad de origen del vuelo (Medellín, Bogotá, Cartagena).
 
-- **destino** = El usuario ingresa la Ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
+- **destino**: El usuario ingresa la Ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
 
-- **semana** = El usuario ingresa  el día de la semana en que se realizará el vuelo.
+- **semana**: El usuario ingresa  el día de la semana en que se realizará el vuelo.
 
-- **dia** = El usuario ingresa el día del mes (1-30).
+- **dia**: El usuario ingresa el día del mes (1-30).
 
-- **preferencia** = El usuario ingresa la preferencia de asiento (pasillo, ventana, sin preferencia).
+- **preferencia**: El usuario ingresa la preferencia de asiento (pasillo, ventana, sin preferencia).
 
 # Variables de salida
 
-- **precio** = Se muestra el precio del boleto determinado por la distancia y el día de la semana.
+- **precio**: Se muestra el precio del boleto determinado por la distancia y el día de la semana.
 
-- **asiento** = Se muestra el número y letra del asiento asignado.
+- **asiento**: Se muestra el número y letra del asiento asignado.
 
 # Otras variables
 
-- **distancia** = Es la distancia entre la ciudad de origen y la de destino. Esta sirve para determinar el precio.
+- **distancia**: Es la distancia entre la ciudad de origen y la de destino. Esta sirve para determinar el precio.
 
-- **let_asiento** = Es la letra del asiento según la preferencia del usuario.
+- **let_asiento**: Es la letra del asiento según la preferencia del usuario.
 
-    - **"A"** = Ventana
+    - **"A"**: Ventana
 
-    - **"B"** = Sin preferencia
+    - **"B"**: Sin preferencia
 
-    - **"C"** = Pasillo
+    - **"C"**: Pasillo
 
-- **num_asiento** = Es el número aleatorio entre 1 y 29 asignado al asiento.
+- **num_asiento**: Es el número aleatorio entre 1 y 29 asignado al asiento.
 
 # Pseudocodigo
 
 ```
 Inicio  
 
-escribir "Ingrese su nombre y apellido: "    
-escribir "Ingrese su título 'Sr' o 'Sra': "  
-leer nombre, titulo    
+Escribir "Ingrese su nombre y apellido: "    
+Escribir "Ingrese su título 'Sr' o 'Sra': "  
+Leer nombre, titulo    
     
-si titulo es "sr"  
-    escribir "Sr. ", nombre, " ¡Bienvenido a FastFast Airlines!"  
-sino
-    si titulo es "sra"  
-        escribir "Sra. ", nombre, " ¡Bienvenida a FastFast Airlines!"  
-    sino  
-        escribir "Título no reconocido. Ingrese 'Sr' o 'Sra'"  
+Si titulo es "sr"  
+    Escribir "Sr. ", nombre, " ¡Bienvenido a FastFast Airlines!"  
+Sino
+    Si titulo es "sra"  
+        Escribir "Sra. ", nombre, " ¡Bienvenida a FastFast Airlines!"  
+    Sino  
+        Escribir "Título no reconocido. Ingrese 'Sr' o 'Sra'"  
     
-escribir "Seleccione una ciudad de origen (Medellin, Bogota, Cartagena): "       
-escribir "Seleccione una ciudad de destino (Medellin, Bogota, Cartagena): "    
-escribir "Ingrese el día de la semana: "  
-escribir "Ingrese el día del mes (1-30): "  
-leer origen, destino, semana, dia  
+Escribir "Seleccione una ciudad de origen (Medellin, Bogota, Cartagena): "       
+Escribir "Seleccione una ciudad de destino (Medellin, Bogota, Cartagena): "    
+Escribir "Ingrese el día de la semana: "  
+Escribir "Ingrese el día del mes (1-30): "  
+Leer origen, destino, semana, dia  
       
-si (origen es "medellin" Y destino es "bogota") o (origen es "bogota" Y destino es "medellin")  
+Si (origen es "medellin" Y destino es "bogota") O (origen es "bogota" Y destino es "medellin")  
     distancia = 240  
-sino
-    si (origen es "medellin" Y destino es "cartagena") o (origen es "cartagena" Y destino es "medellin")  
+Sino
+    Si (origen es "medellin" Y destino es "cartagena") O (origen es "cartagena" Y destino es "medellin")  
         distancia = 461  
-    sino
-        si (origen es "cartagena" Y destino es "bogota") o (origen es "bogota" Y destino es "cartagena")  
+    Sino
+        Si (origen es "cartagena" Y destino es "bogota") O (origen es "bogota" Y destino es "cartagena")  
             distancia = 657  
-        sino  
-            escribir "Origen o destino no reconocido. Ingrese (Medellin, Bogota, Cartagena)"  
+        Sino  
+            Escribir "Origen o destino no reconocido. Ingrese (Medellin, Bogota, Cartagena)"  
  
-si distancia < 400  
-    si semana es ("lunes", "martes", "miércoles", "jueves")  
+Si distancia < 400  
+    Si semana es ("lunes", "martes", "miércoles", "jueves")  
             precio = 79900  
-    sino
-        si semana es ("viernes", "sábado", "domingo")  
+    Sino
+        Si semana es ("viernes", "sábado", "domingo")  
             precio = 119900  
-        sino  
-            escribir "Ingrese un día de la semana correcto"  
-sino
-    si distancia >= 400  
-        si semana es ("lunes", "martes", "miércoles", "jueves")  
+        Sino  
+            Escribir "Ingrese un día de la semana correcto"  
+Sino
+    Si distancia >= 400  
+        Si semana es ("lunes", "martes", "miércoles", "jueves")  
             precio = 156900  
-        sino
-            si semana es ("viernes", "sábado", "domingo")  
+        Sino
+            Si semana es ("viernes", "sábado", "domingo")  
                 precio = 213000  
-            sino  
-                escribir "Ingrese un día de la semana correcto"  
+            Sino  
+                Escribir "Ingrese un día de la semana correcto"  
       
   
-escribir "¿Qué preferencia de asiento tiene? (pasillo, ventana, sin preferencia): "  
-leer preferencia  
+Escribir "¿Qué preferencia de asiento tiene? (pasillo, ventana, sin preferencia): "  
+Leer preferencia  
  
-si preferencia es "pasillo"  
+Si preferencia es "pasillo"  
         let_asiento = 'C'  
-sino
-    si preferencia es "ventana"  
+Sino
+    Si preferencia es "ventana"  
         let_asiento = 'A'  
-    sino
-        si preferencia es "sin preferencia"  
+    Sino
+        Si preferencia es "sin preferencia"  
             let_asiento = 'B'  
-        sino  
-            escribir "Ingrese una preferencia adecuada"  
+        Sino  
+            Escribir "Ingrese una preferencia adecuada"  
  
 num_asiento = numero_aleatorio(1, 29)  
 asiento = {num_asiento}{let_asiento}  
 
-escribir "Tu vuelo de ", origen, " a ", destino, " del ", semana, " ", dia, " está reservado."  
-escribir "Precio del boleto: ", precio  
-escribir "Tu asiento es: ", asiento  
+Escribir "Tu vuelo de ", origen, " a ", destino, " del ", semana, " ", dia, " está reservado."  
+Escribir "Precio del boleto: ", precio  
+Escribir "Tu asiento es: ", asiento  
 
 Fin
 ```

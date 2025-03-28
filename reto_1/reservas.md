@@ -1,38 +1,42 @@
+# Analisis codigo
+
+Este código permite al usuario reservar un boleto de avión con base en la ciudad de origen y destino, el día de la semana, la fecha y la preferencia de asiento. Por ultimo, asigna un precio y un asiento.
+
 # Variables de entrada
 
-- nombre = El usuario ingresa nombre y apellido.
+- **nombre** = El usuario ingresa nombre y apellido.
 
-- titulo = El usuario indica si es "Sr." o "Sra.".
+- **titulo** = El usuario indica si es "Sr." o "Sra.".
 
-- origen = El usuario ingresa la ciudad de origen del vuelo (Medellín, Bogotá, Cartagena).
+- **origen** = El usuario ingresa la ciudad de origen del vuelo (Medellín, Bogotá, Cartagena).
 
-- destino = El usuario ingresa la Ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
+- **destino** = El usuario ingresa la Ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
 
-- semana = El usuario ingresa  el día de la semana en que se realizará el vuelo.
+- **semana** = El usuario ingresa  el día de la semana en que se realizará el vuelo.
 
-- dia = El usuario ingresa el día del mes (1-30).
+- **dia** = El usuario ingresa el día del mes (1-30).
 
-- preferencia = El usuario ingresa la preferencia de asiento (pasillo, ventana, sin preferencia).
+- **preferencia** = El usuario ingresa la preferencia de asiento (pasillo, ventana, sin preferencia).
 
 # Variables de salida
 
-- precio = Se muestra el precio del boleto determinado por la distancia y el día de la semana.
+- **precio** = Se muestra el precio del boleto determinado por la distancia y el día de la semana.
 
-- asiento = Se muestra el número y letra del asiento asignado.
+- **asiento** = Se muestra el número y letra del asiento asignado.
 
 # Otras variables
 
-- distancia = Es la distancia entre la ciudad de origen y la de destino. Esta sirve para determinar el precio.
+- **distancia** = Es la distancia entre la ciudad de origen y la de destino. Esta sirve para determinar el precio.
 
-- let_asiento = Es la letra del asiento según la preferencia del usuario.
+- **let_asiento** = Es la letra del asiento según la preferencia del usuario.
 
-    - "A" = Ventana
+    - **"A"** = Ventana
 
-    - "B" = Sin preferencia
+    - **"B"** = Sin preferencia
 
-    - "C" = Pasillo
+    - **"C"** = Pasillo
 
-- num_asiento = Es el número aleatorio entre 1 y 29 asignado al asiento.
+- **num_asiento** = Es el número aleatorio entre 1 y 29 asignado al asiento.
 
 # Pseudocodigo
 

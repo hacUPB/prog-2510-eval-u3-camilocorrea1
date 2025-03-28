@@ -1,9 +1,10 @@
-# Unidad No. 
-## Información del estudiante  
-Nombre del estudiante: Camilo Correa Tabares
+# Unidad No. 3
+## Información del estudiante 
 
-Id: 000509030
+***Nombre del estudiante: Camilo Correa Tabares**
+**Id: 000509030**
 ---
+
 [Operaciones de Entrada/Salida](ope_entrada_salida/act1.md)
 
 [Condicionales](condicionales/act2.md)

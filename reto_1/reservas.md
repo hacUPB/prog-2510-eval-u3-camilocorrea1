@@ -1,6 +1,8 @@
-# Analisis codigo
+# Análisis código
 
-Este código permite al usuario reservar un boleto de avión con base en la ciudad de origen y destino, el día de la semana, la fecha y la preferencia de asiento. Por ultimo, asigna un precio y un asiento.
+Este código permite al usuario reservar un boleto de avión con base en la ciudad de origen y destino, el día de la semana, la fecha y la preferencia de asiento. Por último, asigna un precio y un asiento.
+
+[Codigo reservas](reservas.py)
 
 # Variables de entrada
 
@@ -10,9 +12,9 @@ Este código permite al usuario reservar un boleto de avión con base en la ciud
 
 - **origen**: El usuario ingresa la ciudad de origen del vuelo (Medellín, Bogotá, Cartagena).
 
-- **destino**: El usuario ingresa la Ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
+- **destino**: El usuario ingresa la ciudad de destino del vuelo (Medellín, Bogotá, Cartagena).
 
-- **semana**: El usuario ingresa  el día de la semana en que se realizará el vuelo.
+- **semana**: El usuario ingresa el día de la semana en que se realizará el vuelo.
 
 - **dia**: El usuario ingresa el día del mes (1-30).
 
@@ -20,13 +22,13 @@ Este código permite al usuario reservar un boleto de avión con base en la ciud
 
 # Variables de salida
 
-- **precio**: Se muestra el precio del boleto determinado por la distancia y el día de la semana.
+- **precio**: Se muestra el precio del boleto, determinado por la distancia y el día de la semana.
 
 - **asiento**: Se muestra el número y letra del asiento asignado.
 
 # Otras variables
 
-- **distancia**: Es la distancia entre la ciudad de origen y la de destino. Esta sirve para determinar el precio.
+- **distancia**: Es la distancia entre la ciudad de origen y la de destino, la cual sirve para determinar el precio.
 
 - **let_asiento**: Es la letra del asiento según la preferencia del usuario.
 
@@ -36,7 +38,7 @@ Este código permite al usuario reservar un boleto de avión con base en la ciud
 
     - **"C"**: Pasillo
 
-- **num_asiento**: Es el número aleatorio entre 1 y 29 asignado al asiento.
+- **num_asiento**: Es un número aleatorio entre 1 y 29, asignado al asiento.
 
 # Pseudocodigo
 

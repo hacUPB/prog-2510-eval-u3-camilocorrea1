@@ -1,7 +1,7 @@
 # Unidad No. 
 ## Información del estudiante  
-Nombre del estudiante: 000509030
+Nombre del estudiante: Camilo Correa Tabares
 
-Id: Camilo Correa Tabares
+Id: 000509030
 ---
 

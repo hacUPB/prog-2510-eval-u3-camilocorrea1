@@ -1,12 +1,12 @@
 import random
 nombre = input("Ingrese su nombre y apellido: ")
-titulo = input("Ingrese su titulo 'Sr.' o 'Sra.': ").lower()
+titulo = input("Ingrese su titulo 'Sr' o 'Sra': ").lower()
 if titulo == "sr":
     print(f"Sr. {nombre}, ¡Bienvenido a FastFast Airlines! ")
 elif titulo == "sra":
     print(f"Sra. {nombre}, ¡Bienvenida a FastFast Airlines! ")
 else:
-    print("Titulo no reconocido. Ingrese 'Sr.' o 'Sra.' ")
+    print("Titulo no reconocido. Ingrese 'Sr' o 'Sra' ")
 
 origen = input("selecione una ciudad de origen (Medellin, Bogota, Cartagena): ").lower()
 destino = input("selecione una ciudad de destino (Medellin, Bogota, Cartagena): ").lower()
